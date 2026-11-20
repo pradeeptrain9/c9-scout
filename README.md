@@ -48,5 +48,5 @@ Map shapes are drawn from where players stood across every match, not from game 
 
 ## Data and license
 Match data is provided by GRID, under the hackathon data license (no redistribution, hackathon use only).
-This repo contains code only. `web/data/` is built on your machine by step 2 above and is gitignored, because
-even aggregated output is derived from the licensed data. Not endorsed by Riot Games. Code: MIT, see `LICENSE`.
+`web/data/` holds only aggregated, binned counts per team (no raw events, no per-event rows), so the demo runs
+without the raw data; rebuild it with step 2. Not endorsed by Riot Games. Code: MIT, see `LICENSE`.
