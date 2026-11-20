@@ -4,6 +4,8 @@ VALORANT scouting for Cloud9 and Cloud9 GC coaches: where an opponent places uti
 Operator / Outlaw / Marshal / Odin players set up, with the sample size printed beside every number.
 Built for the Cloud9 x JetBrains "Sky's The Limit" hackathon, Category 1.
 
+**Live demo:** https://pradeeptrain9.github.io/c9-scout/
+
 ## What a coach sees
 - **Utility map**: choose a team, map and side, then an agent and its abilities. The heatmap shows where each cast
   was thrown from, with white arrows for the average aim at the busiest spots. Click any zone (grid A–J / 1–10)
