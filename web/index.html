@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C9 Scout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand"><span class="dot"></span>C9 Scout <small>VALORANT utility &amp; Operator scouting</small></div>
+  <label>Team <select id="team"></select></label>
+  <label>Map <select id="map"></select></label>
+  <div class="seg" id="side">
+    <button data-v="attacker">Attack</button><button data-v="defender" class="on">Defence</button>
+  </div>
+  <div class="seg" id="mode">
+    <button data-v="utility" class="on">Utility</button><button data-v="operator">Operator</button>
+  </div>
+</header>
+
+<main>
+  <section class="mapcol">
+    <div class="filters" id="filters"></div>
+    <div class="canvaswrap"><canvas id="cv" width="800" height="800" aria-label="Map heatmap"></canvas>
+      <div class="tip" id="tip" hidden></div></div>
+    <div class="legend"><span>fewer</span><i class="ramp"></i><span>more</span>
+      <span class="hint">Click a zone for its round count · grid A–J / 1–10</span></div>
+  </section>
+  <aside>
+    <div class="card" id="evidence"></div>
+    <div class="card" id="detail"></div>
+    <h3>Insights <small id="inscount"></small></h3>
+    <div id="insights"></div>
+  </aside>
+</main>
+<footer>Match data provided by GRID. Not endorsed by Riot Games. Map shapes are drawn from player positions, not game art.</footer>
+<script src="app.js"></script>
+</body>
+</html>
